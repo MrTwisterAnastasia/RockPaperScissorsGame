@@ -20,6 +20,7 @@ const divUser = document.getElementById('user-picked-field')
 
 const openRules_btn = document.getElementById('rules-button')
 const cancelBtn = document.getElementById('popup-close')
+countUser.innerText = count
 
 openRules_btn.onclick = function entry() {
    document.getElementById('entry').style.display = "block";
