@@ -143,9 +143,10 @@ body {
 }
 #game-result {
    font-size: 28px;
-   display: none;
+   display: flex;
    flex-direction: column;
    align-items: center;
+   visibility: hidden;
 }
 #play-again-botton,
 #rules-button {
@@ -287,11 +288,11 @@ h3 {
       width: 25px;
    }
    .scissors {
-      top: -40%;
-      left: 40%;
+      top: -47%;
+      left: 38%;
    }
    .spock {
-      top: -55%;
+      top: -62%;
       left: -5%;
    }
    .paper {
@@ -299,7 +300,8 @@ h3 {
       left: 82%;
    }
    .lizard {
-      left: 12%;
+      left: 10%;
+      top: 6%;
    }
    .rock {
       top: 48%;
@@ -360,17 +362,16 @@ h3 {
    .user-picked {
       grid-area: 1 / 1 / 2 / 2;
       position: relative;
-      left: -15%;
+      left: -4%;
    }
    .house-picked {
       grid-area: 1 / 2 / 2 / 3;
       position: relative;
-      right: 20%;
+      right: 6%;
    }
-   .game-result {
+   #game-result {
       grid-area: 2 / 1 / 3 / 3;
       position: relative;
-      right: 8%;
       margin-top: -45%;
    }
    #game-result-title {
@@ -382,17 +383,17 @@ h3 {
 }
 @media screen and (min-width: 1350px) {
    .scissors {
-      top: -66%;
+      top: -75%;
    }
    .spock {
-      top: -89%;
+      top: -101%;
       left: 10%;
    }
    .rock {
-      top: 55%;
+      top: 50%;
    }
    .lizard {
-      top: -4%;
+      top: -15%;
       left: 19%;
    }
    .wrapper-popup {

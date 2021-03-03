@@ -66,7 +66,7 @@ function houseChoise() {
    housePickedImg.src = `images/icon-${houseChoosen}.svg`
    divHouse.className += `picked-${houseChoosen}`
    divHouse.id = 'house-picked-field'
-   divGame.style.display = 'flex'
+   divGame.style.visibility = 'visible'
    winner()
 }
 function winner() {
@@ -109,7 +109,7 @@ function playGame() {
    divUser.className = ''
    divHouse.className = ''
    divHouse.id = 'house-pickedfield'
-   divGame.style.display = 'none'
+   divGame.style.visibility = 'hidden'
    housePickedImg.src = ``
 }
 
